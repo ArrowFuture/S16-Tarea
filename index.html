@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto 360</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://unpkg.com/bs-brain@2.0.4/components/contacts/contact-1/assets/css/contact-1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Custom Styles -->
+    <style>
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 20px;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1E81B0, #EE9CA7, #FFD700);
+            background-size: 200% 200%;
+            animation: travelGradient 10s ease infinite;
+        }
+
+        @keyframes travelGradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav style="background: linear-gradient(135deg, #1E81B0, #EE9CA7, #FFD700);">
+        <div class="nav-wrapper container">
+            <a href="#!" class="brand-logo">Impacto 360</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#slider">Inicio</a></li>
+                <li><a href="#gallery">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <div class="slider" id="slider">
+        <ul class="slides">
+            <li>
+                <img src="https://s1.1zoom.me/b5050/488/France_Paris_Eiffel_443254_1920x1200.jpg" alt="Slider 1">
+                <div class="caption center-align">
+                    <h3>¡Embárcate en la Aventura de tu Vida!</h3>
+                    <b>
+                        <h5>Descubre destinos increíbles y experiencias únicas</h5>
+                    </b>
+                </div>
+            </li>
+            <li>
+                <img src="https://cdn.pixabay.com/photo/2019/09/28/09/20/temple-4510280_960_720.jpg" alt="Slider 2">
+                <div style="margin: 200px; margin-left: 550px;" class="caption left-align">
+                    <h3>Viaja al Corazón de Japón</h3>
+                    <b>
+                        <h5>Admira la serenidad y la magia de los templos ancestrales</h5>
+                    </b>
+                </div>
+            </li>
+            <li>
+                <img src="https://allamerican.travel/honduras/wp-content/uploads/2018/02/disney_01-01.jpg"
+                    alt="Slider 3">
+                <div style="padding: 200px; margin-left: 350px;" style="margin: 250px; margin-left: 200px;"
+                    class="caption right-align">
+                    <h3>Vive la Magia de Disneyland</h3>
+                    <b>
+                        <h5>Explora un mundo lleno de fantasía y diversión sin límites</h5>
+                    </b>
+                </div>
+            </li>
+            <li>
+                <img style="padding: 400px;"
+                    src="https://www.wacoca.com/news/wp-content/uploads/2022/03/1647674832_maxresdefault-1170x658.jpg"
+                    alt="Slider 4">
+                <div style="margin: 220px; margin-left: 10px;" class="caption center-align">
+                    <h3>Sumérgete en el Mundo de Super Nintendo</h3>
+                    <b>
+                        <h5>Explora un reino lleno de aventuras, diversión y nostalgia</h5>
+                    </b>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Galeria de Proyectos -->
+    <div class="container" id="gallery">
+        <h3 class="center-align">Galeria de Proyectos</h3>
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="col s12 m4 14">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="https://3.bp.blogspot.com/-eXM-zU6ppx4/VK8FDf0TnjI/AAAAAAAAAMA/49KkWNa4jcw/s1600/london3.jpg"
+                            alt="Proyecto 1">
+                        <span class="card-title">
+                            Londres
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                                fill="white" style="margin-left: 5px;">
+                                <path
+                                    d="M12 2C11.45 2 11 2.45 11 3V5H9C8.45 5 8 5.45 8 6V8H16V6C16 5.45 15.55 5 15 5H13V3C13 2.45 12.55 2 12 2ZM8 8C7.45 8 7 8.45 7 9V20C7 20.55 7.45 21 8 21H16C16.55 21 17 20.55 17 20V9C17 8.45 16.55 8 16 8H8ZM11 13C11 12.45 11.45 12 12 12C12.55 12 13 12.45 13 13V15C13 15.55 12.55 16 12 16C11.45 16 11 15.55 11 15V13Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="card-action">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop1">
+                            Ver Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg"> <!-- Ajusta el tamaño del modal si es necesario -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Video Modal</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <center>
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/mE0COXQHJGo?si=BHNnGkrlemKCPSE6"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+                                        </center>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary">Entendido</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="col s12 m4 14">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="https://th.bing.com/th/id/OIP.7-PZ__WLhRQUetWTrzVS2QHaFj?w=600&h=450&rs=1&pid=ImgDetMain"
+                            alt="Proyecto 2">
+                        <span class="card-title">
+                            Nueva York
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                                fill="white" style="margin-left: 5px;">
+                                <path
+                                    d="M12 2C11.45 2 11 2.45 11 3V4H12.5C12.78 4 13 4.22 13 4.5V6H15C15.55 6 16 6.45 16 7V8H13V9H15C15.55 9 16 9.45 16 10V12H8V10C8 9.45 8.45 9 9 9H11V8H8V7C8 6.45 8.45 6 9 6H11V4.5C11 4.22 11.22 4 11.5 4H13V3C13 2.45 12.55 2 12 2ZM6 12H18V14H6V12ZM8 14H10V20H14V14H16V20C16 20.55 15.55 21 15 21H9C8.45 21 8 20.55 8 20V14Z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="card-action">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop2">
+                            Ver Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg"> <!-- Ajusta el tamaño del modal si es necesario -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Video Modal</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <center>
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/tffcpiAXsFs?si=e_oik3L3TDah464a"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+                                        </center>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary">Entendido</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="col s12 m4 14">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="https://th.bing.com/th/id/OIP.56V9cGdZBQisF6Y3kG1AMQHaFd?w=880&h=648&rs=1&pid=ImgDetMain"
+                            alt="Proyecto 3">
+                        <span class="card-title">Roma</span>
+                    </div>
+                    <div class="card-action">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop3">
+                            Ver Detalles
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg"> <!-- Ajusta el tamaño del modal si es necesario -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Video Modal</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <center>
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/oypIwkFbIx8?si=CgM458nMlvq9NE_P"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+                                        </center>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary">Entendido</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seccion de contacto -->
+    <div id="contacto" class="card p-3 mx-auto" style="max-width: 800px;">
+        <h3 style="color: black;" class="center-align">Contacto</h3>
+        <div class="form-control">
+            <div class="mb-2">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" placeholder="Nombre" required>
+            </div>
+            <div class="mb-2">
+                <label for="apellido">Apellido:</label>
+                <input type="text" class="form-control" placeholder="Apellido" required>
+            </div>
+            <div class="mb-2">
+                <label for="email">Correo Electronico:</label>
+                <input type="text" class="form-control" placeholder="Correo Electronico" required>
+            </div>
+            <div class="mb-2">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mesaje" name="mensaje" required></textarea>
+            </div>
+            <br>
+            <div class="text-center">
+                <button type="button" class="btn btn-success">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+    <!-- Pie de Pagina -->
+    <footer class="center-align">
+        <div class="social-icons">
+            <a href="#" class="white-text"><i class="material-icons">facebook</i></a>
+            <a href="#" class="white-text"><i class="material-icons">Instagram</i></a>
+            <a href="#" class="white-text"><i class="material-icons">Twitter</i></a>
+        </div>
+        <p>&copy; 2024 Mi Portafolio. Hecho por Leonardo Tinco Future.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            //Inicializar Sidenav
+            const sidenavElems = document.querySelectorAll('.sidenav')
+            M.Sidenav.init(sidenavElems);
+            //Inicializar Slider
+            const sliderElems = document.querySelectorAll('.slider')
+            M.Slider.init(sliderElems, {
+                height: 500,
+                interval: 5000
+            });
+        });
+    </script>
+
+</body>
+
+</html>
